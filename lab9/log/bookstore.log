@@ -1,0 +1,279 @@
+2020-04-26T17:24:35,220 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23505 
+2020-04-26T17:24:35,223 ERROR [main]: SqlExceptionHelper                   - ERROR: duplicate key value violates unique constraint "book_pkey"
+  Detail: Key (id)=(1) already exists. 
+2020-04-26T17:30:54,428 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23503 
+2020-04-26T17:30:54,431 ERROR [main]: SqlExceptionHelper                   - ERROR: update or delete on table "book" violates foreign key constraint "transaction_book_id_fkey" on table "transaction"
+  Detail: Key (id)=(1) is still referenced from table "transaction".2020-04-26T17:34:20,706 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23505 
+2020-04-26T17:34:20,708 ERROR [main]: SqlExceptionHelper                   - ERROR: duplicate key value violates unique constraint "book_pkey"
+  Detail: Key (id)=(1) already exists. 
+2020-04-26T17:35:59,258 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23505 
+2020-04-26T17:35:59,260 ERROR [main]: SqlExceptionHelper                   - ERROR: duplicate key value violates unique constraint "book_pkey"
+  Detail: Key (id)=(2) already exists.2020-04-26T20:07:45,108 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:07:45,113 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (4, diana, diana, null, diana@diana.com, diana@diana.com). 
+2020-04-26T20:11:44,055 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:11:44,058 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (6, diana, diana, null, diana@diana.com, 19.19.1919). 
+2020-04-26T20:12:34,991 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:12:34,992 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (7, diana, diana, null, diana@diana.com, 19.02.2000). 
+2020-04-26T20:23:44,026 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:23:44,047 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (8, diana, diana, null, diana@diana.com, 10.02.2000). 
+2020-04-26T20:34:25,890 WARN  [HikariPool-1 housekeeper]: HikariPool                           - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s211ms). 
+2020-04-26T20:35:41,334 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:35:41,337 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (9, diana, diana, null, diana@diana.com, 20.01.2000). 
+2020-04-26T20:37:47,291 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:37:47,293 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (10, diana, diana, null, diana, 10.02.2020). 
+2020-04-26T20:44:10,143 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-26T20:44:10,145 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (11, diana, diana, null, diana@diana.com, 19.02.2000). 
+2020-04-26T20:46:15,951 TRACE [main]: BookServiceImpl                      - updateBook - method entered: book=Title: title1
+Categorycategory1
+Author: author1
+Release Date: 10.10.2020
+Price:19
+BaseEntity ID: null
+
+ 
+2020-04-26T20:51:12,466 TRACE [main]: BookServiceImpl                      - updateBook - method entered: book=Title: title2
+Categorycategory1
+Author: author2
+Release Date: 19.02.2000
+Price:10
+BaseEntity ID: 2
+
+ 
+2020-04-26T20:51:12,482 DEBUG [main]: BookServiceImpl                      - updateBook - updated: b=Title: title2
+Categorycategory1
+Author: author2
+Release Date: 19.02.2000
+Price:10
+BaseEntity ID: 2
+
+ 
+2020-04-26T20:51:12,483 TRACE [main]: BookServiceImpl                      - updateBook - method finished 
+2020-04-27T00:21:06,693 TRACE [main]: BookServiceImpl                      - updateBook - method entered: book=Title: action
+Category: action
+Author: action
+Release Date: 19.02.9999
+Price:50
+BaseEntity ID: 12
+
+ 
+2020-04-27T00:21:06,703 DEBUG [main]: BookServiceImpl                      - updateBook - updated: b=Title: action
+Category: action
+Author: action
+Release Date: 19.02.9999
+Price:50
+BaseEntity ID: 12
+
+ 
+2020-04-27T00:21:06,704 TRACE [main]: BookServiceImpl                      - updateBook - method finished 
+2020-04-27T00:22:08,788 TRACE [main]: ClientServiceImpl                    - updateClient - method entered: client=First Name: ana
+Last Name: ana
+Date Of Birth: 88.99.9999
+Email: ana@ana.com
+BaseEntity ID: 13
+
+ 
+2020-04-27T00:22:08,792 DEBUG [main]: ClientServiceImpl                    - updateClient - updated: c=First Name: ana
+Last Name: ana
+Date Of Birth: 88.99.9999
+Email: ana@ana.com
+BaseEntity ID: 13
+
+ 
+2020-04-27T00:22:08,792 TRACE [main]: ClientServiceImpl                    - updateBook - method finished 
+2020-04-27T00:23:05,977 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-27T00:23:05,977 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "client_id" violates not-null constraint
+  Detail: Failing row contains (14, null, null, 2, 13). 
+2020-04-27T00:24:54,270 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-27T00:24:54,273 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "client_id" violates not-null constraint
+  Detail: Failing row contains (15, null, null, 5, 13). 
+2020-04-27T00:51:36,849 TRACE [main]: ClientServiceImpl                    - updateClient - method entered: client=First Name: ioana
+Last Name: ioana
+Date Of Birth: 19.02.2000
+Email: ioana@ioana.com
+BaseEntity ID: 13
+
+ 
+2020-04-27T00:51:36,858 DEBUG [main]: ClientServiceImpl                    - updateClient - updated: c=First Name: ioana
+Last Name: ioana
+Date Of Birth: 19.02.2000
+Email: ioana@ioana.com
+BaseEntity ID: 13
+
+ 
+2020-04-27T00:51:36,859 TRACE [main]: ClientServiceImpl                    - updateBook - method finished 
+2020-04-27T17:56:48,000 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-27T17:56:48,003 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (19, hkjfsh, kjfsg, fksdgh, 19.19.1999, 33, null). 
+2020-04-27T17:58:54,473 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-27T17:58:54,475 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "new_column" violates not-null constraint
+  Detail: Failing row contains (20, dhth, kltrwjlwrs, hrkesthkjr, kjeshgkj, 19, null).2020-04-28T09:57:53,207 TRACE [main]: EntityServiceImpl                    - addEntity - method entered: entity=First Name: teodora
+Last Name: teodora
+Date Of Birth: 19.19.1999
+Email: teo@teo.com
+BaseEntity ID: null
+
+ 
+2020-04-28T09:57:53,316 DEBUG [main]: EntityServiceImpl                    - addEntity - added: entity=First Name: teodora
+Last Name: teodora
+Date Of Birth: 19.19.1999
+Email: teo@teo.com
+BaseEntity ID: 31
+
+ 
+2020-04-28T09:57:53,317 TRACE [main]: EntityServiceImpl                    - addEntity - method finished 
+2020-04-28T10:02:17,883 TRACE [main]: EntityServiceImpl                    - deleteEntity - method entered: entity=Title: title
+Category: category
+Author: author
+Release Date: 19.19.1999
+Price:88
+BaseEntity ID: 30
+
+ 
+2020-04-28T10:02:17,958 DEBUG [main]: EntityServiceImpl                    - deleteEntity - deleted: entity=Title: title
+Category: category
+Author: author
+Release Date: 19.19.1999
+Price:88
+BaseEntity ID: 30
+
+ 
+2020-04-28T10:02:17,959 TRACE [main]: EntityServiceImpl                    - deleteEntity - method finished
+2020-04-28T11:04:08,036 TRACE [main]: EntityServiceImpl                    - addEntity - method entered: entity=First Name: maria
+Last Name: maria
+Date Of Birth: 19.02.1999
+Email: maria@maria.com
+BaseEntity ID: null
+
+ 
+2020-04-28T11:04:08,142 DEBUG [main]: EntityServiceImpl                    - addEntity - added: entity=First Name: maria
+Last Name: maria
+Date Of Birth: 19.02.1999
+Email: maria@maria.com
+BaseEntity ID: 32
+
+ 
+2020-04-28T11:04:08,143 TRACE [main]: EntityServiceImpl                    - addEntity - method finished 
+2020-04-28T11:28:39,026 TRACE [main]: EntityServiceImpl                    - addEntity - method entered: entity=Title: hfdsal
+Category: cate
+Author: jlsad
+Release Date: 19.02.2000
+Price:77
+BaseEntity ID: null
+
+ 
+2020-04-28T11:28:39,158 DEBUG [main]: EntityServiceImpl                    - addEntity - added: entity=Title: hfdsal
+Category: cate
+Author: jlsad
+Release Date: 19.02.2000
+Price:77
+BaseEntity ID: 33
+
+ 
+2020-04-28T11:28:39,159 TRACE [main]: EntityServiceImpl                    - addEntity - method finished 
+2020-05-01T17:41:31,471 ERROR [main]: HikariPool                           - HikariPool-1 - Exception during pool initialization. 
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:514) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:141) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.Driver.makeConnection(Driver.java:454) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.Driver.connect(Driver.java:256) ~[postgresql-42.2.5.jar:42.2.5]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117) ~[HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123) ~[HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194) ~[HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:459) [HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:533) [HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:114) [HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) [HikariCP-2.7.7.jar:?]
+	at application.Config.JPAConfig.dataSource(JPAConfig.java:48) [main/:?]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd.CGLIB$dataSource$2(<generated>) [main/:?]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd$$FastClassBySpringCGLIB$$5125e25d.invoke(<generated>) [main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) [spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd.dataSource(<generated>) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd.dataSource(<generated>) [main/:?]
+	at application.Config.JPAConfig.entityManagerFactory(JPAConfig.java:62) [main/:?]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd.CGLIB$entityManagerFactory$0(<generated>) [main/:?]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd$$FastClassBySpringCGLIB$$5125e25d.invoke(<generated>) [main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) [spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at application.Config.JPAConfig$$EnhancerBySpringCGLIB$$cec0acbd.entityManagerFactory(<generated>) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:479) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:99) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at application.Main.main(Main.java:9) [main/:?]
+2020-05-01T17:41:31,490 WARN  [main]: AnnotationConfigApplicationContext   - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl' defined in file [/Users/dianadragos/Desktop/mpp/lab9/build/classes/java/main/application/Service/BookServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bookRepository': Cannot create inner bean '(inner bean)#3dedb4a6' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3dedb4a6': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in application.Config.JPAConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.persistence.EntityManagerFactory]: Factory method 'entityManagerFactory' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in application.Config.JPAConfig: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: FATAL: password authentication failed for user "postgres" 

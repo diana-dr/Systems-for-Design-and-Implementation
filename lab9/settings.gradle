@@ -1,0 +1,5 @@
+rootProject.name = 'spring-jpa'
+include 'client'
+include 'core'
+include 'web'
+
